@@ -1,0 +1,8 @@
+.button:hover{
+    background-color:blue
+}
+
+
+#reservationTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#reservationTable tr:hover {background-color: blue;}
