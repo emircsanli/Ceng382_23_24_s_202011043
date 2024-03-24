@@ -18,16 +18,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\USER\OneDrive\Masaüstü\CENG382\Ceng382_23_24_s_202011043\LabProject
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/USER/OneDrive/Masaüstü/CENG382/Ceng382_23_24_s_202011043/LabProject/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/USER/OneDrive/Masaüstü/CENG382/Ceng382_23_24_s_202011043/LabProject/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/USER/OneDrive/Masaüstü/CENG382/Ceng382_23_24_s_202011043/LabProject/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/USER/OneDrive/Masaüstü/CENG382/Ceng382_23_24_s_202011043/LabProject/Pages/Shared/_ValidationScriptsPartial.cshtml]
