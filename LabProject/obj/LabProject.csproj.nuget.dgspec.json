@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\USER\\OneDrive\\Masaüstü\\CENG382\\Ceng382_23_24_s_202011043\\LabProject\\LabProject.csproj": {}
+    "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/LabProject.csproj": {}
   },
   "projects": {
-    "c:\\Users\\USER\\OneDrive\\Masaüstü\\CENG382\\Ceng382_23_24_s_202011043\\LabProject\\LabProject.csproj": {
+    "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/LabProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\USER\\OneDrive\\Masaüstü\\CENG382\\Ceng382_23_24_s_202011043\\LabProject\\LabProject.csproj",
+        "projectUniqueName": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/LabProject.csproj",
         "projectName": "LabProject",
-        "projectPath": "c:\\Users\\USER\\OneDrive\\Masaüstü\\CENG382\\Ceng382_23_24_s_202011043\\LabProject\\LabProject.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\USER\\OneDrive\\Masaüstü\\CENG382\\Ceng382_23_24_s_202011043\\LabProject\\obj\\",
+        "projectPath": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/LabProject.csproj",
+        "packagesPath": "/Users/salute/.nuget/packages/",
+        "outputPath": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/salute/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
