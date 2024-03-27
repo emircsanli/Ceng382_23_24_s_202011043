@@ -9,12 +9,20 @@
       "PackagePath": "staticwebassets/css/Lab4.css"
     },
     {
+      "Id": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/wwwroot/css/lab5.css",
+      "PackagePath": "staticwebassets/css/lab5.css"
+    },
+    {
       "Id": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
       "Id": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/wwwroot/js/lab5.js",
+      "PackagePath": "staticwebassets/js/lab5.js"
     },
     {
       "Id": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/wwwroot/js/site.js",

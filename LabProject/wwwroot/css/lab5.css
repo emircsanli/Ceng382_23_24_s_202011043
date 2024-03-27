@@ -1,0 +1,23 @@
+.additonForm{
+    align-items: center;
+    display: none;
+    padding: 30px;
+    border: 1px solid ;
+    border-color: rgb(26, 48, 158);
+    border-radius: 5%;
+    width: 400px;
+    font-size: large;
+    margin-left: 35%;
+    }
+
+
+
+.answerForm{
+display: none;
+padding: 5px;
+width: 400px;
+background-color: white; 
+color: rgb(23, 17, 223) ;
+font-size: x-large;
+margin-left: 455px;
+}

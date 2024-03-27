@@ -1,14 +1,31 @@
 ﻿@page
-@model MyApp.Namespace.lab5Model
+@model MyApp.Namespace.Lab5Model
 @{
 }
-
 
 <main>
     
 <link rel="stylesheet" href="~/css/Lab4.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/lab5.css" asp-append-version="true" />
+      <button id="toggleElementButton" onclick="HideElements()" class="btn btn-primary my-2" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3">Hide Elements </button>
+      <button id="toggleAdditionButton" onclick="ShowAdditionForm()" class="btn btn-secondary my-2" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3">Show Addition Form</button>
+
+<div id="additionForm" class="additonForm">
+      <form> 
+        <h2 class="text-center">Addition Form</h2>
+        <label for="firstNumber" class="form-label">Enter first number:</label><br>
+        <input type="number" class="form-control" id="firstNumber" name="firstNumber"><br>
+        <label for="secondNumber" class="form-label">Enter second number:</label>
+        <input type="number" class="form-control" id="secondNumber" name="secondNumber"><br>
+        <button id="totalButton" type=button class="btn btn-primary" onclick="calculate()">Calculate Sum</button>
+      </form>
+  </div>
+  <div class="col-lg-2">
+    <label type="text" class="answerForm" id="answer" name="answer"><br>
+  </div>
 
   <div id="myCarousel" class="carousel slide mb-6 py-5" data-bs-ride="carousel">
+    
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -138,4 +155,5 @@ BMW M vehicles are traditionally distinguished by modified engines, transmission
 
 
   <!-- FOOTER -->
+  <script src="~/js/lab5.js"></script>
 </main>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5E+nV1KJ6ZfkStLOzvnwIpf8zXaomM2+81OXO6Q+e74=",
+  "Hash": "C01sNcC6evOFIZZYnDUJi3TZd0nYNSGkuC+Rn87EHMg=",
   "Source": "LabProject",
   "BasePath": "_content/LabProject",
   "Mode": "Default",
@@ -74,6 +74,25 @@
       "OriginalItemSpec": "wwwroot/css/Lab4.css"
     },
     {
+      "Identity": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/wwwroot/css/lab5.css",
+      "SourceId": "LabProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/wwwroot/",
+      "BasePath": "_content/LabProject",
+      "RelativePath": "css/lab5.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/lab5.css"
+    },
+    {
       "Identity": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/wwwroot/css/site.css",
       "SourceId": "LabProject",
       "SourceType": "Discovered",
@@ -110,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/wwwroot/js/lab5.js",
+      "SourceId": "LabProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/wwwroot/",
+      "BasePath": "_content/LabProject",
+      "RelativePath": "js/lab5.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/lab5.js"
     },
     {
       "Identity": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/wwwroot/js/site.js",
