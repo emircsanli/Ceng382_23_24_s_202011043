@@ -1,0 +1,15 @@
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/bin/Debug/net8.0/Ceng382_23_24_s_202011043
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/bin/Debug/net8.0/Ceng382_23_24_s_202011043.deps.json
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/bin/Debug/net8.0/Ceng382_23_24_s_202011043.runtimeconfig.json
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/bin/Debug/net8.0/Ceng382_23_24_s_202011043.dll
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/bin/Debug/net8.0/Ceng382_23_24_s_202011043.pdb
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/obj/Debug/net8.0/Ceng382_23_24_s_202011043.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/obj/Debug/net8.0/Ceng382_23_24_s_202011043.AssemblyInfoInputs.cache
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/obj/Debug/net8.0/Ceng382_23_24_s_202011043.AssemblyInfo.cs
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/obj/Debug/net8.0/Ceng382_23_24_s_202011043.csproj.CoreCompileInputs.cache
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/obj/Debug/net8.0/Ceng382_23_24_s_202011043.sourcelink.json
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/obj/Debug/net8.0/Ceng382_23_24_s_202011043.dll
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/obj/Debug/net8.0/refint/Ceng382_23_24_s_202011043.dll
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/obj/Debug/net8.0/Ceng382_23_24_s_202011043.pdb
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/obj/Debug/net8.0/Ceng382_23_24_s_202011043.genruntimeconfig.cache
+/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/obj/Debug/net8.0/ref/Ceng382_23_24_s_202011043.dll
