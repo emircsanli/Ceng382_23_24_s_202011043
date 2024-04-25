@@ -1,0 +1,15 @@
+using ReservationSystem;
+
+public class LogHandler{
+    private ILogger logger;
+
+    public LogHandler(ILogger logger)
+    {
+        this.logger = logger;
+    }
+
+    public void AddLog(LogRecord log)
+    {
+        logger.LogRecord(log);
+    }
+}
