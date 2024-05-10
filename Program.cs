@@ -7,100 +7,132 @@ class Program
 {
     static void Main(String[] args)
     {
-        Reservation reservation1 = new Reservation();
-        reservation1.SetDate(DateTime.Today);
-        reservation1.SetTime(DateTime.Now);
-        reservation1.SetReserverName("reserver1");
-        reservation1.SetRoom(new Room()
+        LogHandler logHandler = new LogHandler();
+        RoomHandler roomHandler = new RoomHandler();
+        ReservationService reservationService = new ReservationService();
+        ReservationRepository reservationRepository = new ReservationRepository();
+
+        reservationRepository.loadRooms();
+        RoomHandler.availableRooms = reservationRepository.getRooms();
+
+        Reservation reservation1 = new Reservation()
         {
-            Id = "001",
-            Name = "A-101",
-            Capacity = 30
-        });
+            date = DateTime.Today,
+            time = DateTime.Now,
+            reserverName = "reserver1",
+            room = RoomHandler.availableRooms[0]
+        };
+        reservationService.createReservation(reservation1);
+        reservationService.reserveRoom(reservation1);
+        logHandler.handleLog(new LogRecord(DateTime.Today, "reserver1"));
 
-        Reservation reservation2 = new Reservation();
-        reservation2.SetDate(DateTime.Today);
-        reservation2.SetTime(DateTime.Now);
-        reservation2.SetReserverName("reserver2");
-        reservation2.SetRoom(new Room()
+        Reservation reservation2 = new Reservation()
         {
-            Id = "002",
-            Name = "A-102",
-            Capacity = 32
-        });
+            date = DateTime.Today,
+            time = DateTime.Now,
+            reserverName = "reserver2",
+            room = RoomHandler.availableRooms[1]
+        };
+        reservationService.createReservation(reservation2);
+        reservationService.reserveRoom(reservation2);
+        logHandler.handleLog(new LogRecord(DateTime.Today, "reserver2"));
 
-        Reservation reservation3 = new Reservation();
-        reservation3.SetDate(DateTime.Today);
-        reservation3.SetTime(DateTime.Now);
-        reservation3.SetReserverName("reserver3");
-        reservation3.SetRoom(new Room()
+        Reservation reservation3 = new Reservation()
         {
-            Id = "003",
-            Name = "A-103",
-            Capacity = 34
-        });
+            date = DateTime.Today,
+            time = DateTime.Now,
+            reserverName = "reserver3",
+            room = RoomHandler.availableRooms[2]
+        };
+        reservationService.createReservation(reservation3);
+        reservationService.reserveRoom(reservation3);
+        logHandler.handleLog(new LogRecord(DateTime.Today, "reserver3"));
 
-        Reservation reservation4 = new Reservation();
-        reservation4.SetDate(DateTime.Today);
-        reservation4.SetTime(DateTime.Now);
-        reservation4.SetReserverName("reserver4");
-        reservation4.SetRoom(new Room()
+        Reservation reservation4 = new Reservation()
         {
-            Id = "004",
-            Name = "A-104",
-            Capacity = 36
-        });
+            date = DateTime.Today,
+            time = DateTime.Now,
+            reserverName = "reserver4",
+            room = RoomHandler.availableRooms[3]
+        };
+        reservationService.createReservation(reservation4);
+        reservationService.reserveRoom(reservation4);
+        logHandler.handleLog(new LogRecord(DateTime.Today, "reserver4"));
 
-        Reservation reservation5 = new Reservation();
-        reservation5.SetDate(DateTime.Today);
-        reservation5.SetTime(DateTime.Now);
-        reservation5.SetReserverName("reserver5");
-        reservation5.SetRoom(new Room()
+        Reservation reservation5 = new Reservation()
         {
-            Id = "005",
-            Name = "A-105",
-            Capacity = 38
-        });
+            date = DateTime.Today,
+            time = DateTime.Now,
+            reserverName = "reserver5",
+            room = RoomHandler.availableRooms[4]
+        };
+        reservationService.createReservation(reservation5);
+        reservationService.reserveRoom(reservation5);
+        logHandler.handleLog(new LogRecord(DateTime.Today, "reserver5"));
 
-        ReservationHandler reservationHandler = new ReservationHandler();
-
-        reservationHandler.AddReservation(reservation1, reservation1.ReserverName);
-        reservationHandler.AddReservation(reservation2, reservation2.ReserverName);
-        reservationHandler.AddReservation(reservation3, reservation3.ReserverName);
-        reservationHandler.AddReservation(reservation4, reservation4.ReserverName);
-        reservationHandler.AddReservation(reservation5, reservation5.ReserverName);
-
-        List<Reservation> reservationList = reservationHandler.GetAllReservations();
-
-        foreach (Reservation reservation in reservationList)
+        Reservation reservation6 = new Reservation()
         {
+            date = DateTime.Today,
+            time = DateTime.Now,
+            reserverName = "reserver6",
+            room = RoomHandler.availableRooms[5]
+        };
+        reservationService.createReservation(reservation6);
+        reservationService.reserveRoom(reservation6);
+        logHandler.handleLog(new LogRecord(DateTime.Today, "reserver6"));
 
-            Console.WriteLine($"Reservation Time : {reservation.Time} Reservation Date : {reservation.Date} Reserver Name : {reservation.ReserverName} Room : {reservation.Room}");
+        reservationService.cancelReservation(reservation1);
+        reservationService.cancelReservation(reservation2);
+
+        reservationRepository.saveReservations();
+        Console.WriteLine("------------------------------------------------");
+        Console.WriteLine("Filtered Logs for messages)");
+
+       List<LogRecord>logs=LogHandler.DisplayLogsByName(reservation3.reserverName);
+       foreach (var logRecord in logs){
+        Console.WriteLine(logRecord.message);
+       }
+        logs=LogHandler.DisplayLogsByName(reservation4.reserverName);
+       foreach (var logRecord in logs){
+        Console.WriteLine(logRecord.message);
+       }
+
+        Console.WriteLine("------------------------------------------------");
+        Console.WriteLine("Filtered Logs for time) ");
+        DateTime startDate = DateTime.Today.AddDays(-1);
+        DateTime endDate = DateTime.Today.AddDays(+1);
+       List<LogRecord>logss=LogHandler.DisplayLogs(startDate,endDate);
+       foreach (var logRecord in logss){
+        Console.WriteLine(logRecord.message);
+       }
+
+        Console.WriteLine("------------------------------------------------");
+        Console.WriteLine("Filtered reservations by name)");
+
+       List<Reservation> reservations = ReservationService.DisplayReservationByReserver("reserver6");
+        foreach (Reservation res in reservations)
+        {
+            Console.WriteLine($"Rezervasyon ID: {res.room.id}, Rezervasyon Tarihi: {res.date.ToShortDateString()}, Oda Adı: {res.room.roomName}");
+        }
+        reservations=ReservationService.DisplayReservationByReserver("reserver5");
+        foreach (Reservation res in reservations)
+        {
+            Console.WriteLine($"Rezervasyon ID: {res.room.id}, Rezervasyon Tarihi: {res.date.ToShortDateString()}, Oda Adı: {res.room.roomName}");
+        }
+        Console.WriteLine("------------------------------------------------");
+        Console.WriteLine("Filtered reservations by Id");
+
+       List<Reservation> reservationss = ReservationService.DisplayReservationByRoomId(reservation3.room.id);
+        foreach (Reservation res in reservationss)
+        {
+            Console.WriteLine($"Rezervasyon ID: {res.room.id}, Rezervasyon Tarihi: {res.date.ToShortDateString()}, Oda Adı: {res.room.roomName}");
+        }
+        reservations=ReservationService.DisplayReservationByRoomId(reservation4.room.id);
+        foreach (Reservation res in reservationss)
+        {
+            Console.WriteLine($"Rezervasyon ID: {res.room.id}, Rezervasyon Tarihi: {res.date.ToShortDateString()}, Oda Adı: {res.room.roomName}");
         }
 
-        reservationHandler.DeleteReservation(reservation2);
-        reservationHandler.DeleteReservation(reservation3);
 
-        reservationHandler.GetAllReservations().ForEach(reservation => Console.WriteLine(reservation));
-
-        IRoomService roomService = new RoomService();
-        List<Room> roomlist = reservationHandler.GetRooms();
-        foreach (var room in roomlist)
-        {
-
-            Console.WriteLine($"Room ID : {room.Id} | RoomName : {room.Name} | Capacity : {room.Capacity}");
-        }
-
-        reservationHandler.SaveRooms(roomlist);
-        reservationHandler.SaveRooms(roomlist);
-        reservationHandler.SaveRooms(roomlist);
-
-        foreach (var room in roomlist)
-        {
-
-            Console.WriteLine($"Room ID : {room.Id} | RoomName : {room.Name} | Capacity : {room.Capacity}");
-        }
-        ILogger filelogger = new FileLogger();
-    
     }
 }

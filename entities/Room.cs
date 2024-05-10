@@ -7,12 +7,12 @@ namespace ReservationSystem
     public record Room
     {
         [JsonPropertyName("roomId")]
-        public string? Id { get; init; }
+        public string? id { get; init; }
 
         [JsonPropertyName("roomName")]
-        public string? Name { get; init; }
+        public string? roomName { get; init; }
 
         [JsonPropertyName("capacity")]
-        public int Capacity { get; init; }
+        public int capacity { get; init; }
     }
 }

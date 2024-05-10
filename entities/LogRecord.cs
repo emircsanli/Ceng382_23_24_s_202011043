@@ -1,42 +1,45 @@
 using System;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace ReservationSystem
 {
     public record LogRecord
     {
-        public DateTime TimeStamp;
-        public string ReserverName;
-        public string RoomName;
 
-        public LogRecord(DateTime timeStamp, string reserverName, string roomName){
+        [JsonPropertyName("timeStamp")]
+        public DateTime timeStamp { get; set; }
 
-            TimeStamp = timeStamp;
-            ReserverName = reserverName;
-            RoomName = roomName;
+        [JsonPropertyName("message")]
+        public string message { get; set; }
+
+        public LogRecord(DateTime TimeStamp, string Message)
+        {
+
+            this.timeStamp = TimeStamp;
+            this.message = Message;
         }
 
-        public DateTime GetTimeStamp(){
-            return this.TimeStamp;
+        public DateTime GetTimeStamp()
+        {
+            return this.timeStamp;
         }
 
-        public string GetReserverName(){
-            return this.ReserverName;
+        public string GetMessage()
+        {
+            return this.message;
         }
 
-        public string GetRoomName(){
-            return this.RoomName;
+        public void SetTimeStamp(DateTime TimeStamp)
+        {
+            this.timeStamp = TimeStamp;
         }
 
-        public void SetTimeStamp(DateTime timeStamp){
-            this.TimeStamp = timeStamp;
+        public void SetMessage(string Message)
+        {
+            this.message = Message;
         }
 
-        public void SetReserverName(string reserverName){
-            this.ReserverName = reserverName;
-        }
 
-        public void SetRoomName(string roomName){
-            this.RoomName = roomName;
-        }
     }
 }

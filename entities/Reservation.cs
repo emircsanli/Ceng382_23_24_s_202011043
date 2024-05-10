@@ -6,55 +6,55 @@ namespace ReservationSystem
     public record Reservation
     {
         [JsonPropertyName("reservationTime")]
-        public DateTime Time { get; set; }
+        public DateTime time { get; set; }
 
         [JsonPropertyName("reservationDate")]
-        public DateTime Date { get; set; }
+        public DateTime date { get; set; }
 
         [JsonPropertyName("reserverName")]
-        public string? ReserverName { get; set; }
+        public string? reserverName { get; set; }
 
         [JsonPropertyName("room")]
-        public Room? Room { get; set; }
+        public Room? room { get; set; }
 
         public DateTime GetTime()
         {
-            return this.Time;
+            return this.time;
         }
 
         public DateTime GetDate()
         {
-            return this.Date;
+            return this.date;
         }
 
         public string? GetReserverName()
         {
-            return this.ReserverName;
+            return this.reserverName;
         }
 
         public Room? GetRoom()
         {
-            return this.Room;
+            return this.room;
         }
 
         public void SetTime(DateTime time)
         {
-            this.Time = time;
+            this.time = time;
         }
 
         public void SetDate(DateTime date)
         {
-            this.Date = date;
+            this.date = date;
         }
 
         public void SetReserverName(string reserverName)
         {
-            this.ReserverName = reserverName;
+            this.reserverName = reserverName;
         }
 
         public void SetRoom(Room room)
         {
-            this.Room = room;
+            this.room = room;
         }
 
     }

@@ -1,32 +1,70 @@
+using System.Runtime.InteropServices;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using ReservationSystem;
 
+
 public class ReservationRepository : IReservationRepository
 {
+private readonly string reservationFilePath = "datas/ReservationData.json";
+    private readonly string roomFilePath = "datas/Data.json";
+    public static List<Reservation> reservations;
+    public static List<Room> rooms;
 
-    private readonly string FilePath = "datas/ReservationData.json";
+     public void loadReservations(){
+        if (File.Exists(reservationFilePath))
+        {
+            string json = File.ReadAllText(reservationFilePath);
+            var data = JsonSerializer.Deserialize<Dictionary<string, List<Reservation>>>(json);
+            reservations=data?["Reservations"] ?? new List<Reservation>();
 
-    [JsonPropertyName("Reservations")]
-    public List<Reservation>? Reservations { get; set; }
+     }
+     }
+      public void loadRooms(){
+        if (File.Exists(roomFilePath))
+        {
+            string json = File.ReadAllText(roomFilePath);
+            var data = JsonSerializer.Deserialize<Dictionary<string, List<Room>>>(json);
+            rooms=data?["Rooms"] ?? new List<Room>();
 
-
-    public void AddReservation(Reservation reservation)
-    {
+     }
+      }
+      public void saveReservations(){
         try
         {
-            if (Reservations == null)
-            {
-                Reservations = new List<Reservation>();
-            }
-
-            Reservations.Add(reservation);
-
-
-            string json = "{\"Reservations\": " + JsonSerializer.Serialize(Reservations) + "}";
-            File.WriteAllText(FilePath, json);
+            string json = "{\"Reservations\": " + JsonSerializer.Serialize(reservations) + "}";
+            File.WriteAllText(reservationFilePath, json);
         }
         catch (Exception ex)
+        {
+            Console.WriteLine("Error saving reservations! Exception Details: " + ex.Message);
+        }
+      }
+      public void saveRooms(){
+        try
+        {
+            string json = "{\"Rooms\": " + JsonSerializer.Serialize(rooms) + "}";
+            File.WriteAllText(roomFilePath, json);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error saving rooms! Exception Details: " + ex.Message);
+        }
+      }
+    
+    public void AddReservation(Reservation reservation)
+    {
+       try
+        {
+            if (reservations == null)
+            {
+                reservations = new List<Reservation>();
+            }
+
+            reservations.Add(reservation);
+
+    }
+    catch (Exception ex)
         {
             Console.WriteLine("Error saving rooms! Exception Details: " + ex.Message);
         }
@@ -34,18 +72,16 @@ public class ReservationRepository : IReservationRepository
 
     public void DeleteReservation(Reservation reservation)
     {
-try
+        try
         {
-            if (Reservations == null)
+            if (reservations == null)
             {
+                
                 Console.WriteLine($"{nameof(Reservation)} does not exist.");
             }
             else
             {
-                Reservations?.Remove(reservation);
-
-                string json = "{\"Reservations\": " + JsonSerializer.Serialize(Reservations) + "}";
-                File.WriteAllText(FilePath, json);
+                reservations?.Remove(reservation);
             }
         }
         catch (Exception ex)
@@ -54,39 +90,15 @@ try
         }
     }
 
-    public List<Reservation> GetAllReservations()
+    public List<Reservation> getReservations()
     {
-        try
-        {
-            string jsonString = File.ReadAllText(FilePath);
+        return reservations;
 
-            var reservationRepository = JsonSerializer.Deserialize<ReservationRepository>(
-                jsonString,
-                new JsonSerializerOptions()
-                {
-                    NumberHandling = JsonNumberHandling.AllowReadingFromString | JsonNumberHandling.WriteAsString
-                });
-
-            if (Reservations == null)
-            {
-                Reservations = new List<Reservation>();
-            }
-
-            Reservations = reservationRepository?.Reservations;
-
-            if (Reservations != null)
-            {
-
-                return Reservations;
-            }
-            else{
-                return null;
-            }
-        }
-        catch (NotImplementedException notImplementedExceptionMessage)
-        {
-            Console.WriteLine("Task failed! Exception Details: " + notImplementedExceptionMessage.Message);
-            return null;
-        }
     }
+
+    public List<Room> getRooms()
+    {
+        return rooms;
+    }
+
 }

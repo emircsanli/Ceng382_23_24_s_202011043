@@ -2,9 +2,7 @@ using ReservationSystem;
 
 public interface IReservationService{
 
-    public void AddReservation(Reservation reservation, string reserverName);
+    public void createReservation(Reservation reservation);
+     public void cancelReservation(Reservation reservation);
 
-    public void DeleteReservation(Reservation reservation);
-
-    public void DisplayWeeklySchedule();
 }

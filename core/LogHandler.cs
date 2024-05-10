@@ -1,15 +1,17 @@
 using ReservationSystem;
 
 public class LogHandler{
-    private ILogger logger;
+    
+    private FileLogger fileLogger = new FileLogger();
+    public void handleLog(LogRecord record){
 
-    public LogHandler(ILogger logger)
-    {
-        this.logger = logger;
+        fileLogger.log(record);
+        fileLogger.logMessage(record.message);
     }
-
-    public void AddLog(LogRecord log)
-    {
-        logger.LogRecord(log);
+    public static List<LogRecord> DisplayLogsByName(string name){
+        return FileLogger.logList.FindAll(log => log.message == name);
+    }
+    public static List<LogRecord>DisplayLogs(DateTime start, DateTime end){
+        return FileLogger.logList.FindAll(log => log.timeStamp >= start && log.timeStamp <= end);
     }
 }

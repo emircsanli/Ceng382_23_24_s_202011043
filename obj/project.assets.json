@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/salute/.nuget/packages/": {}
+    "C:\\Users\\USER\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/Ceng382_23_24_s_202011043.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\OneDrive\\Masaüstü\\Ceng382_23_24_s_202011043\\Ceng382_23_24_s_202011043.csproj",
       "projectName": "Ceng382_23_24_s_202011043",
-      "projectPath": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/Ceng382_23_24_s_202011043.csproj",
-      "packagesPath": "/Users/salute/.nuget/packages/",
-      "outputPath": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/obj/",
+      "projectPath": "C:\\Users\\USER\\OneDrive\\Masaüstü\\Ceng382_23_24_s_202011043\\Ceng382_23_24_s_202011043.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USER\\OneDrive\\Masaüstü\\Ceng382_23_24_s_202011043\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/salute/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

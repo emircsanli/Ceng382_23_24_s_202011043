@@ -4,19 +4,35 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using ReservationSystem;
 
-
 public class FileLogger : ILogger
 {
+    public static List<LogRecord>logList;
     private readonly string FilePath = "datas/LogData.json";
-    
 
-    public void LogRecord(LogRecord log)
-    {
-        string jsonLog = $"{{\"Timestamp\": \"{log.TimeStamp}\", \"Reserver Name\": \"{log.ReserverName}\", \"Room Name\": \"{log.RoomName}\"}}";
+    public void log(LogRecord record){
+        string jsonLog = $"{{\"Record Timestamp\": \"{record.timeStamp}\", \"Record Message\": \"{record.message}\"}}";
 
-        File.AppendAllText(FilePath, jsonLog + Environment.NewLine);
-        string json = "{\"Loggers\": " + JsonSerializer.Serialize(LogRecord) + "}";
-            File.WriteAllText(FilePath, json);
+       try
+        {
+            if (logList == null)
+            {
+                logList = new List<LogRecord>();
+            }
+
+            logList.Add(record);
+
     }
-
+    catch (Exception ex)
+        {
+            Console.WriteLine("Error saving Log ! " + ex.Message);
+        }
+        File.AppendAllText(FilePath, jsonLog + Environment.NewLine);
+        string json = "{\"Loggers\": " + JsonSerializer.Serialize(record) + "}";
+            File.WriteAllText(FilePath, json);
+    
+    }
+    public void logMessage(string message)
+    {
+         Console.WriteLine(message);
+    }
 }
