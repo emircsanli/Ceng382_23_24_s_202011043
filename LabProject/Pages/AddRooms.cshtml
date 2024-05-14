@@ -1,0 +1,70 @@
+﻿@page
+@model MyApp.Namespace.AddRoomsModel
+
+
+<head>
+    <title>Login 10</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="img js-fullheight"
+    style="background-image: url(https://bilimgenc.tubitak.gov.tr/sites/default/files/etkileyici_doga_fotograflari_4.jpg); background-size: cover; background-repeat: no-repeat;background-attachment: fixed;">
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h1 class="heading-section" style="color:white">Lab 10</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="login-wrap p-0">
+                        <h3 class="mb-4 text-center" style="color:white">Do you Want Add Room</h3>
+                        <form class="requires-validation" method="post" novalidate>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text-black" style="opacity:0.6;border-radius:15px; height:50px" name="Room.RoomName"
+                                    placeholder="Room Name" required> <br>
+                                <div class="valid-feedback">Room Name field is valid!</div>
+                                <div class="invalid-feedback">Room Name field cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="number" style="opacity:0.6;border-radius:15px; height:50px" name="Room.Capacity" placeholder="Capacity"
+                                    required> <br>
+                                <div class="valid-feedback">Capacity field is valid!</div>
+                                <div class="invalid-feedback">Capacity field cannot be blank!</div>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label">Datas Correct</label>
+                                <div class="invalid-feedback">Please confirm that the entered data are all correct!
+                                </div>
+                            </div>
+
+
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary" onclick="OnPostAsync" style="background-color:green; color:black"> Add</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vedd3670a3b1c4e178fdfb0cc912d969e1713874337387"
+        integrity="sha512-EzCudv2gYygrCcVhu65FkAxclf3mYM6BCwiGUm6BEuLzSb5ulVhgokzCZED7yMIkzYVg65mxfIBNdNra5ZFNyQ=="
+        data-cf-beacon='{"rayId":"883352afb86170ce","version":"2024.4.1","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+        crossorigin="anonymous"></script>
+</body>
