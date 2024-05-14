@@ -1,6 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 public class Room
 {
-public int Id { get; set; }
-public string RoomName { get; set; }
-public int Capacity { get; set; }
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int Id { get; set; }
+    public string ?RoomName { get; set; }
+    public int Capacity { get; set; }
 }
