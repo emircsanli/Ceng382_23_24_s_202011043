@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Aq84w/adI7LuSpMes/q9vCty5hC6IXY8717Ipj6YgvLYIZUo9EnHWvidrBqVg/tdvM3Qs5U69xfA4Yf0CEbIgg==",
+  "dgSpecHash": "twLcJbCP8kMtK7p9CJwkmWIP1T9dOFdlHg9CtpoWrUuLqGFgrQOmhwEi4tk48IOcFiVWHfdvo+uKCCAnbZlBVg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\USER\\OneDrive\\Masaüstü\\Ceng382_23_24_s_202011043\\LabProject\\LabProject.csproj",
+  "projectFilePath": "C:\\Users\\USER\\OneDrive\\Masaüstü\\Ceng382_23_24_s_202011043\\LabProject\\LabProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
