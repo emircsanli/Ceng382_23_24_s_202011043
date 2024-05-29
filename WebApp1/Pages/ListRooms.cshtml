@@ -20,6 +20,7 @@
             </div>
         </div>
         <div class="panel-body table-responsive">
+           
 
             @if (Model.IRooms != null && Model.IRooms.Any())
             {
@@ -41,11 +42,16 @@
                                 <td>@room.RoomName</td>
                                 <td>@room.Capacity</td>
                                 <td>
-                                      <form method="post" asp-page-handler="EditRoom" asp-route-roomId="@room.Id" style="display:inline">
-                                        <button type="button" onclick="showInputForm('@room.Id')" class="btn btn-danger"><i class="fa fa-edit"></i></button>
-                                        <input id="eRoomName-@room.Id" style="display:none" type="text" name="roomName" value="@room.RoomName" />
-                                        <input id="eRoomCapacity-@room.Id" style="display:none" type="number" name="capacity" value="@room.Capacity" />
-                                        <button id="eOkeyButton-@room.Id" style="display:none" type="submit" class="btn btn-danger"><i class="fa fa-check-circle"></i></button>
+                                    <form method="post" asp-page-handler="EditRoom" asp-route-roomId="@room.Id"
+                                        style="display:inline">
+                                        <button type="button" onclick="showInputForm('@room.Id')" class="btn btn-danger"><i
+                                                class="fa fa-edit"></i></button>
+                                        <input id="eRoomName-@room.Id" style="display:none" type="text" name="roomName"
+                                            value="@room.RoomName" />
+                                        <input id="eRoomCapacity-@room.Id" style="display:none" type="number" name="capacity"
+                                            value="@room.Capacity" />
+                                        <button id="eOkeyButton-@room.Id" style="display:none" type="submit"
+                                            class="btn btn-danger"><i class="fa fa-check-circle"></i></button>
                                     </form>
 
                                     <form method="post" asp-page-handler="Remove" asp-route-id="@room.Id" style="display:inline"

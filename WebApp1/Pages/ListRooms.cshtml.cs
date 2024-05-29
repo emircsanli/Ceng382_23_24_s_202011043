@@ -3,12 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using WebApp1.Data;
+
 namespace WebApp1.Pages
 {
-[Authorize]
+    [Authorize]
     public class ListRoomsModel : PageModel
     {
-
         private readonly ApplicationDbContext _context;
         public IList<Room>? IRooms { get; set; }
         public Room? Room { get; set; } = new Room();
@@ -49,5 +49,6 @@ namespace WebApp1.Pages
             await _context.SaveChangesAsync();
             return RedirectToPage();
         }
+
     }
 }
