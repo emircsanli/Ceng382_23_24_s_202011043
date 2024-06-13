@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/Ceng382_23_24_s_202011043.csproj": {}
+    "C:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_202011043\\Ceng382_23_24_s_202011043.csproj": {}
   },
   "projects": {
-    "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/Ceng382_23_24_s_202011043.csproj": {
+    "C:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_202011043\\Ceng382_23_24_s_202011043.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/Ceng382_23_24_s_202011043.csproj",
+        "projectUniqueName": "C:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_202011043\\Ceng382_23_24_s_202011043.csproj",
         "projectName": "Ceng382_23_24_s_202011043",
-        "projectPath": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/Ceng382_23_24_s_202011043.csproj",
-        "packagesPath": "/Users/salute/.nuget/packages/",
-        "outputPath": "/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/obj/",
+        "projectPath": "C:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_202011043\\Ceng382_23_24_s_202011043.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\OneDrive\\Masaüstü\\382\\Ceng382_23_24_s_202011043\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/salute/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
