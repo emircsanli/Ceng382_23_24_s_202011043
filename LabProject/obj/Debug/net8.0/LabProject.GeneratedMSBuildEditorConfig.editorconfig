@@ -9,35 +9,35 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LabProject
 build_property.RootNamespace = LabProject
-build_property.ProjectDir = /Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/
+build_property.ProjectDir = C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_202011043\LabProject\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject
+build_property.MSBuildProjectDirectory = C:\Users\user\OneDrive\Masaüstü\382\Ceng382_23_24_s_202011043\LabProject
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+[C:/Users/user/OneDrive/Masaüstü/382/Ceng382_23_24_s_202011043/LabProject/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/Pages/Lab5.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGFiNS5jc2h0bWw=
+[C:/Users/user/OneDrive/Masaüstü/382/Ceng382_23_24_s_202011043/LabProject/Pages/lab5.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbGFiNS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/Pages/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/user/OneDrive/Masaüstü/382/Ceng382_23_24_s_202011043/LabProject/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/user/OneDrive/Masaüstü/382/Ceng382_23_24_s_202011043/LabProject/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/user/OneDrive/Masaüstü/382/Ceng382_23_24_s_202011043/LabProject/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/salute/Desktop/Ceng382-Clone/Ceng382_23_24_s_202011043/LabProject/Pages/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-7xwt5bee03
+[C:/Users/user/OneDrive/Masaüstü/382/Ceng382_23_24_s_202011043/LabProject/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-j6dvz5p2xa
